@@ -12,9 +12,9 @@ from transformers import pipeline
 
 st.set_page_config(page_title="E-Commerce Competitor Strategy Dashboard", layout="wide")
 
-API_KEY = "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"
+API_KEY = "gsk_TjtfiOHuwhqnMylq2fHIWGdyb3FYBAF64QLftL91xsb"
 
-SLACK_WEBHOOK = "https://hooks.slack.com/services/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"  # Slack webhook url
+SLACK_WEBHOOK = "https://hooks.slack.com/services/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"  # Slack webhook url
 
 def truncate_text(text, max_length=512):
     return text[:max_length]
@@ -53,7 +53,6 @@ def train_predictive_model(data):
 
 
 import numpy as np
-# from pmdarima import auto_arima
 import pandas as pd
 
 def forecast_discounts_arima(data, future_days=5):
@@ -83,45 +82,6 @@ def forecast_discounts_arima(data, future_days=5):
 
     return forecast_df
 
-# def forecast_discounts_arima(data, future_days=5):
-#     """
-#     Forecast future discounts using ARIMA with automatic order selection.
-
-#     Args:
-#         data: DataFrame containing historical discount data with a datetime index.
-#         future_days: Number of days to forecast.
-
-#     Returns:
-#         DataFrame with historical and forecasted discounts.
-#     """
-#     # Ensure the index is in datetime format and sorted
-#     if not isinstance(data.index, pd.DatetimeIndex):
-#         data.index = pd.to_datetime(data.index, errors="coerce")
-#     data = data.sort_index().dropna()
-
-#     # Ensure numeric values in the Discount column
-#     data["Discount"] = pd.to_numeric(data["Discount"], errors="coerce").dropna()
-
-#     if len(data) < 10:  # Require at least 10 observations
-#         raise ValueError("Not enough data points to fit the ARIMA model.")
-
-#     discount_series = data["Discount"]
-
-#     # Use auto_arima to select optimal parameters
-#     try:
-#         model = auto_arima(discount_series, seasonal=False, stepwise=True, error_action='ignore')
-#         forecast = model.predict(n_periods=future_days)
-#     except Exception as e:
-#         raise ValueError("ARIMA model fitting failed: " + str(e))
-
-#     # Create future dates for forecast
-#     last_date = discount_series.index[-1]
-#     future_dates = pd.date_range(last_date + pd.Timedelta(days=1), periods=future_days)
-
-#     forecast_df = pd.DataFrame({"Date": future_dates, "Predicted_Discount": forecast})
-#     forecast_df.set_index("Date", inplace=True)
-
-#     return forecast_df
 
 def send_to_slack(data):
     """
