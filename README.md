@@ -14,10 +14,15 @@ Data Visualization: Real-time visual reports on pricing trends and customer sent
 Technologies Used
 
 Python: Programming language for data collection and analysis.
+
 Selenium: Used for web scraping to collect real-time product data.
+
 Pandas: Data manipulation and export to CSV for easy reporting.
+
 BeautifulSoup (optional): For parsing HTML content if needed.
+
 Hugging Face: For sentiment analysis of customer reviews.
+
 WebDriverManager: For managing Chrome WebDriver automatically.
 
 
