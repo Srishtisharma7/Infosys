@@ -29,3 +29,6 @@ The app primarily scrapes data from major e-commerce websites such as:
 Amazon
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+!Example(https://github.com/user-attachments/assets/09d34708-6d10-4345-9b85-fa144c819b16)
+!DASHBOARD](https://github.com/user-attachments/assets/e628caa5-1804-4e1f-ba7c-0504f8134337)
