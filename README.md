@@ -53,7 +53,7 @@ reviews.csv: Data containing product reviews.
 ### 3. Run the Streamlit Dashboard
 To start the Streamlit dashboard, run the following command in the terminal:
 
-streamlit run streamlit_dashboard.py
+streamlit run Ecommerce_app.py
 This will start the dashboard locally, and you can access it by navigating to http://localhost:8501 in your browser.
 
 ### 4. Slack Webhook Setup
@@ -92,7 +92,16 @@ Recommendations are sent to a Slack channel via webhook for real-time collaborat
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Screenshots attatched for the refernce
 
 
-!Example(https://github.com/user-attachments/assets/09d34708-6d10-4345-9b85-fa144c819b16)
-!DASHBOARD](https://github.com/user-attachments/assets/e628caa5-1804-4e1f-ba7c-0504f8134337)
+<img width="1440" alt="Screenshot 2025-01-29 at 2 15 13 PM" src="https://github.com/user-attachments/assets/0f3c46f2-5ed1-4f90-a67e-a04ac537e5c8" />
+<img width="1440" alt="Screenshot 2025-01-29 at 2 15 19 PM" src="https://github.com/user-attachments/assets/8934b603-bd8f-4dcc-aa04-bed9aa5750c8" />
+<img width="1440" alt="Screenshot 2025-01-29 at 2 15 23 PM" src="https://github.com/user-attachments/assets/f4e84c1e-2431-4eaa-9c46-1b6752c81f3a" />
+
+<img width="1440" alt="Screenshot 2025-01-29 at 2 13 09 PM" src="https://github.com/user-attachments/assets/57470a06-1267-488c-b043-8afc6bf76336" />
+<img width="1440" alt="Screenshot 2025-01-29 at 2 13 17 PM" src="https://github.com/user-attachments/assets/3e4a8f7d-f10e-497c-bf9a-87007cb49493" />
+<img width="1440" alt="Screenshot 2025-01-29 at 2 13 19 PM" src="https://github.com/user-attachments/assets/1635c132-9b8d-4bd5-9f46-7ec5030495da" />
+<img width="1440" alt="Screenshot 2025-01-29 at 2 13 21 PM" src="https://github.com/user-attachments/assets/3d84bc4e-bf49-48c1-9f89-1d200f59e54a" />
+
+
