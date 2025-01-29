@@ -14,7 +14,7 @@ from transformers import pipeline
 st.set_page_config(page_title="E-Commerce Competitor Strategy Dashboard", layout="wide")
 
 # Define the API keys and Webhook URL for Groq API and Slack integration
-API_KEY = "gsk_TjtfiOHuwhqnMylq2fHIWGdyb3FYBAF64QLftL91xsb"
+API_KEY = "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"
 
 SLACK_WEBHOOK = "https://hooks.slack.com/services/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"  # Slack webhook url
 
